@@ -46,11 +46,13 @@ public class StarShow {
 
 	private void drawStar(int starSize) {
 		// 2. Put the robot's pen down
-
+		robot.penDown();
 		// 4. Repeat both commands 5 times. See Figure 1 at http://bit.ly/star-show
-
+		for (int i = 0; i < 12; i++) {
+			robot.turn(144); robot.move(starSize);
+		}
 			// 1. Move the robot the distance of the starSize variable
-	
+	  
 			// 3. Turn the robot 144 degrees
 			
 	}
